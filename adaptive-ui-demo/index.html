@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adaptive UI Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="layout-normal">
+    <header>
+      <h1>Adaptive UI Demo</h1>
+      <p class="subtitle">This demo adapts layout and font size based on your interactions.</p>
+    </header>
+    <main>
+      <section id="controls">
+        <button id="toggleLayout">Toggle Layout</button>
+        <button id="increaseFont">Increase Font</button>
+        <button id="decreaseFont">Decrease Font</button>
+        <button id="reset">Reset Learning</button>
+      </section>
+      <section id="content">
+        <p>Interact with the buttons above. The system records your choices and adapts the interface to your inferred preference (compact vs spacious).</p>
+        <div class="cards" id="cards">
+          <div class="card">Card A — quick info</div>
+          <div class="card">Card B — more details</div>
+          <div class="card">Card C — settings</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small>Adaptive UI demo — stores preferences locally in your browser.</small>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
